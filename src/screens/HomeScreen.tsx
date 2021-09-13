@@ -41,9 +41,9 @@ const HomeScreen = () => {
           />
         </View>
 
-        <HorizontalSlider title="Popular" movies={popular!} />
-        <HorizontalSlider title="Top rate" movies={topRated!} />
-        <HorizontalSlider title="Upcoming" movies={upcoming!} />
+        <HorizontalSlider title="Popular" movies={popular} />
+        <HorizontalSlider title="Top rate" movies={topRated} />
+        <HorizontalSlider title="Upcoming" movies={upcoming} />
       </View>
     </ScrollView>
   );

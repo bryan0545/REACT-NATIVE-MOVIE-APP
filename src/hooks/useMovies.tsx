@@ -12,7 +12,12 @@ interface MoviesState {
 
 const useMovies = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [moviesState, setMoviesState] = useState<MoviesState>();
+  const [moviesState, setMoviesState] = useState<MoviesState>({
+    nowPlaying: [],
+    popular: [],
+    topRated: [],
+    upcoming: [],
+  });
 
   const getMovie = async () => {
     const nowPlayingPromise = movieDB.get<MovieDBResponse>('/now_playing');
